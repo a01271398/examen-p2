@@ -1,0 +1,10 @@
+<ul>
+    
+    {{#each model as |test|}}
+        <li>
+            {{#link-to 'exam-detail' test.id tagName='button'}}{{show-test test=test}}{{/link-to}}
+        </li>
+    {{/each}}
+    
+    <button{{action 'nuevo'}}>Crear examen</button>
+</ul>

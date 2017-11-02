@@ -1,0 +1,5 @@
+{{test-detail test=model borrado=(action 'transition')}}
+{{#each model.preguntas as |pregunta|}}
+    {{question-exam pregunta=pregunta}}
+{{/each}}
+<button{{action 'nuevaPregunta'}}>Añadir Pregunta</button>
